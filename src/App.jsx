@@ -8,6 +8,7 @@ import Footer from './Components/Footer/Footer'
 import Sidebar from './Components/Sidebar/Sidebar'
 import Cart from './Pages/Cart/Cart'
 import Checkout from './Pages/Checkout/Checkout'
+import ErrorPage from './Pages/ErrorPage'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
    <Route path='/cart' element={<Cart/>}/>
    <Route path='/products' element={<Products/>}/>
    <Route path='/checkout' element={<Checkout/>}/>
+   <Route path= '*' element = {<ErrorPage />} />
    </Routes>
    <Footer/>
 

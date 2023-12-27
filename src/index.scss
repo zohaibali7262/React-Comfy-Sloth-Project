@@ -152,6 +152,22 @@ p {
 	}
 }
 
+ #page-hero {
+width: 100%;
+min-height: 20vh;
+display: flex;
+
+color: var(--clr-primary-1);
+a {
+  color: var(--clr-primary-3);
+  padding: 0.5rem;
+  transition: var(--transition);
+}
+a:hover {
+  color: var(--clr-primary-1);
+}
+ }
+
 /* section */
 .section {
 	padding: 5rem 0;
@@ -160,6 +176,15 @@ p {
 	width: 90vw;
 	margin: 0 auto;
 	max-width: var(--max-width);
+}
+
+.section-center p{
+	line-height: 2;
+    max-width: 45em;
+    margin: 2rem auto 0px;
+    color: var(--clr-grey-5);
+	text-align: justify;
+
 }
 
 @media screen and (min-width: 992px) {
@@ -238,6 +263,11 @@ button:disabled {
 .page-100 {
 	min-height: calc(100vh - 10rem);
 	padding: 5rem 0;
+	background: var(--clr-primary-10);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;  
 }
 .page {
 	min-height: calc(100vh - (20vh + 10rem));
@@ -311,6 +341,32 @@ button:disabled {
 			gap: 24px;
 		}
 	}
+}
+
+//      <============Footer=================>
+
+ #container {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-black);
+  text-align: center;
+  span {
+    color: var(--clr-primary-5);
+  }
+  h5 {
+    color: var(--clr-white);
+    margin: 0.2rem;
+
+    font-weight: 400;
+    text-transform: none;
+    line-height: 1.25;
+  }
+  @media (min-width: 776px) {
+    flex-direction: row;
+  }
 }
 
 // <==============CartButtons=================>
@@ -724,9 +780,15 @@ button:disabled {
 		p {
 			margin-bottom: 0;
 		}
+		
 	}
 	@media (min-width: 1280px) {
 		padding: 15rem 0;
+	}
+	@media (max-width: 375px) {
+		.form-input {
+			width: 100%;
+		}	
 	}
 }
 
