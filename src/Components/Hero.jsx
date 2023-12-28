@@ -4,7 +4,7 @@ import heroBcg from '/src/assets/Images/about-img.jpeg'
 import heroBcg2 from '/src/assets/Images/hero-bcg-2.jpeg'
 const Hero = () => {
   return (
-    <div className='' id='hero'>
+    <div className='container mx-auto' id='hero'>
       <article className='content'>
         <h1>
           design your <br />

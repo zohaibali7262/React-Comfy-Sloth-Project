@@ -13,7 +13,7 @@ const About = () => {
             <h2>our story</h2>
             <div className='underline'></div>
           </div>
-          <p>
+          <p className='mt-8'>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
             accusantium sapiente tempora sed dolore esse deserunt eaque
             excepturi, delectus error accusamus vel eligendi, omnis beatae.

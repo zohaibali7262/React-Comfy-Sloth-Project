@@ -9,6 +9,7 @@ import Sidebar from './Components/Sidebar/Sidebar'
 import Cart from './Pages/Cart/Cart'
 import Checkout from './Pages/Checkout/Checkout'
 import ErrorPage from './Pages/ErrorPage'
+import SingleProductPage from './Pages/SingleProductPage'
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
    <Route path='/about' element={<About/>}/>
    <Route path='/cart' element={<Cart/>}/>
    <Route path='/products' element={<Products/>}/>
+   <Route path='/products/:id' element ={<SingleProductPage/>}/>
    <Route path='/checkout' element={<Checkout/>}/>
    <Route path= '*' element = {<ErrorPage />} />
    </Routes>
@@ -34,5 +36,4 @@ function App() {
 }
 
 export default App
-
 

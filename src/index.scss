@@ -153,11 +153,14 @@ p {
 }
 
  #page-hero {
-width: 100%;
-min-height: 20vh;
-display: flex;
 
-color: var(--clr-primary-1);
+background: var(--clr-primary-10);
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: var(--clr-primary-1);
 a {
   color: var(--clr-primary-3);
   padding: 0.5rem;
@@ -167,6 +170,23 @@ a:hover {
   color: var(--clr-primary-1);
 }
  }
+
+
+ #Star_icon {
+	display: flex;
+ align-items: center;
+ span {
+   color: #ffb900;
+   font-size: 1rem;
+   margin-right: 0.25rem;
+ }
+ p {
+   margin-left: 0.5rem;
+   margin-bottom: 0;
+ }
+ margin-bottom: 0.5rem;
+}
+
 
 /* section */
 .section {
@@ -181,7 +201,7 @@ a:hover {
 .section-center p{
 	line-height: 2;
     max-width: 45em;
-    margin: 2rem auto 0px;
+    // margin: 2rem auto 0px;
     color: var(--clr-grey-5);
 	text-align: justify;
 
