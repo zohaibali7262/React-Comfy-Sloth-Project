@@ -880,6 +880,7 @@ button:disabled {
 		margin-bottom: 1.25rem;
 		h5 {
 			margin-bottom: 0.5rem;
+			font-weight: 700;
 		}
 	}
 	.search-input {
@@ -979,7 +980,6 @@ button:disabled {
 	display: grid;
 	grid-template-columns: auto auto 1fr auto;
 	align-items: center;
-	margin-bottom: 2rem;
 	column-gap: 2rem;
 	@media (max-width: 576px) {
 		display: grid;
@@ -1029,7 +1029,7 @@ button:disabled {
 		border-color: transparent;
 		font-size: 1rem;
 		text-transform: capitalize;
-		padding: 0.25rem 0.5rem;
+		// padding: 0.25rem 0.5rem;
 	}
 	label {
 		font-size: 1rem;
